@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+                box-sizing:border-box;
+                margin:0px;
+                padding:0px;
+        }
+        .container{
+            background-color:rgb(179, 222, 227);
+            border:3px solid rgb(177, 41, 211);
+            /*we can set padding/margin for top right bottom left */
+            /* padding:y(top/bottom) x(right/left) */
+        
+            padding: 7px 7px 7px 7px;
+            margin:10px 1px 9px 1px;
+            border-radius:20px;
+            width:233px;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <p>This is my heading</p>
+            <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam nulla ex unde obcaecati delectus laboriosam excepturi. Facere amet minima adipisci qui aperiam?</p>
+        </div>
+        <div class="container">
+            <p>This is my heading</p>
+            <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam nulla ex unde obcaecati delectus laboriosam excepturi. Facere amet minima adipisci qui aperiam?</p>
+        </div>
+        <div class="container">
+            <p>This is my heading</p>
+            <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quam nulla ex unde obcaecati delectus laboriosam excepturi. Facere amet minima adipisci qui aperiam?</p>
+        </div>
+</body>
+</html>
