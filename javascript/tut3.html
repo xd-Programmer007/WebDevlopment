@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT | String Functions</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <script>
+        var str = "This is a string";
+        console.log(str);
+        //find position of is
+        var pos = str.indexOf('is');
+        console.log(pos); //returns first occurance of a substring
+        //similarly lastIndexOf
+        pos = str.lastIndexOf('is')
+        console.log(pos);
+        //substring from a string
+        var substr = str.slice(1, 5);
+        console.log(substr);
+        //substr method cannot take negative values
+        substr = str.substring(1, 7);
+        console.log(substr);
+        //replace
+        //string is immutable
+        var replaced = str.replace('string', "adarsh");
+        console.log(replaced);
+        //uppercase
+        console.log(str.toUpperCase());
+        //lowercase
+        console.log(str.toLowerCase());
+        //trim
+        var strWithWhiteSpaces = "  this contains whitespaces     ";
+        console.log(strWithWhiteSpaces);
+        console.log(strWithWhiteSpaces.trim());
+        for (var c = 0; c < str.length; c++) {
+            console.log(str.charAt(c));
+            console.log(str.charCodeAt(c));
+        }
+    </script>
+</body>
+
+</html>

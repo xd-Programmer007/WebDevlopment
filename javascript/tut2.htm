@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript | string and string methods</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illum voluptatum repudiandae ab dolores cum asperiores, accusamus adipisci nostrum quisquam!</p>
+
+    </div>
+    <div id="content">This is old text</div>
+    <script>
+        var string = 'this is a "string" can use this to escape \'';
+        console.log(string);
+        //concatenate two strings
+        var s1 = "Adarsh";
+        var s2 = " Tiwari";
+        var temp = `${s1+s2} is a good name`; //synonymous to f strings in python
+        console.log(temp);
+        console.log(s1 + s2);
+        s1 += (s2);
+        var len = s1.length;
+        console.log(`length of your name is ${len}`)
+            //escape sequence characters
+        console.log("\n\t\a");
+        document.writeln("This is written in the webpage and not on console");
+        document.getElementById("content").innerHTML = "<h3>This is manipulated using Js</h3>";
+    </script>
+</body>
+
+</html>
