@@ -5,43 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JAVASCRIPT | String Functions</title>
-    <style>
-
-    </style>
+    <title></title>
 </head>
 
 <body>
+    <form action="">
+        <input type="number" name="" id="sub1" placeholder="Sub1 Marks"><br>
+        <input type="number" name="" id="sub2" placeholder="Sub2 Marks"><br>
+        <input type="number" name="" id="sub3" placeholder="Sub3 Marks"><br>
+        <input type="number" name="" id="sub4" placeholder="Sub4 Marks"><br>
+        <input type="number" name="" id="sub5" placeholder="Sub5 Marks"><br>
+        <button type="button" onClick="result()">Calculate Result</button>
+        <h1>Total marks:<span id="totalMarks"></span></h1>
+        <h1>Percentage:<span id="percentage"></span></h1>
+        <h1>Result:<span id="result"></span></h1>
+    </form>
     <script>
-        var str = "This is a string";
-        console.log(str);
-        //find position of is
-        var pos = str.indexOf('is');
-        console.log(pos); //returns first occurance of a substring
-        //similarly lastIndexOf
-        pos = str.lastIndexOf('is')
-        console.log(pos);
-        //substring from a string
-        var substr = str.slice(1, 5);
-        console.log(substr);
-        //substr method cannot take negative values
-        substr = str.substring(1, 7);
-        console.log(substr);
-        //replace
-        //string is immutable
-        var replaced = str.replace('string', "adarsh");
-        console.log(replaced);
-        //uppercase
-        console.log(str.toUpperCase());
-        //lowercase
-        console.log(str.toLowerCase());
-        //trim
-        var strWithWhiteSpaces = "  this contains whitespaces     ";
-        console.log(strWithWhiteSpaces);
-        console.log(strWithWhiteSpaces.trim());
-        for (var c = 0; c < str.length; c++) {
-            console.log(str.charAt(c));
-            console.log(str.charCodeAt(c));
+        function result() {
+            const subMarks = [];
+            var result, percentage, sum;
+            for (let x = 1; x <= 5; x++) {
+                subMarks.push(parseInt(document.getElementById(`sub${x}`).value, 10));
+            }
+            sum = subMarks.reduce(myFunc);
+            console.log(sum);
+
+            function myFunc(total, value) {
+                return total + value;
+            }
+            percentage = sum / 5;
+
+            function lessForty(value) {
+                return value < 40;
+            }
+            if (subMarks.some(lessForty)) {
+                result = "Failed in 1 or more subject";
+            } else {
+                document.getElementById("percentage").innerHTML = percentage;
+                result = "Passed!";
+            }
+            document.getElementById("result").innerHTML = result;
+            document.getElementById("totalMarks").innerHTML = sum;
+
         }
     </script>
 </body>

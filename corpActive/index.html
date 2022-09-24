@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOMEPAGE</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg " id="myNav">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <button id="login" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</button>
+                            <button id="register" data-bs-toggle="modal" data-bs-target="#exampleModal1">REGISTER</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Modal  Login-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">LOGIN</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">User Name</label><br>
+                            <input style="width:100%;" type="text" name="" id="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">password</label><br>
+                            <input style="width:100%;" type="password" name="" id="userpassword">
+                        </div>
+                        <div class="mb-3">
+                            <button style="color:white; background-color:black; width:100%;" id="userbutton">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal1 Register-->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">REGISTER</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                           ....
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">User Name</label><br>
+                            <input style="width:100%;" type="text" name="" id="">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Password</label><br>
+                            <input style="width:100%;" type="password" name="" id="userpassword">
+                        </div>
+                        <div class="mb-3">
+                            <button style="width:100%;" id="userbutton">Login</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- login form -->
+        <!-- carousel  -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/pic1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/pic2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/pic3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br><br>
+        <!-- about us  -->
+        <div class="container text-center ">
+            <div class="row aboutus">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <h1 class="heading text-uppercase st-current align-left">abOUT US</h1>
+                    <div class="sub-heading">
+                        <p>vel tincidunt justo leo eget ex Nam vel feugiat aliquam, vel tincidunt justo facilisis. Nunc Nam vel feugiat</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est, rem.</p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <img class=" pseudo-border " src="./assets/pic4.jpg" alt="coffee mug">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Mission</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Vision</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Values</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, molestias nisi animi odio ratione non neque? Repellat, eligendi velit. Sunt esse ipsa velit, temporibus deserunt aut? Molestiae quidem harum dolorem.</p>
+                        </div>
+
+                        <div class="tab-pane " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <p>ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus? Maiores excepturi sit fuga doloribus asperiores cupiditate omnis cumque deserunt corrupti molestiae ipsam, quisquam tempore voluptatum nostrum aut! Explicabo,
+                                ducimus?
+                            </p>
+                        </div>
+                        <div class="tab-pane " id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">dolor sit amet consectetur adipisicing elit. Asperiores tempora aspernatur dignissimos id quibusdam beatae fuga qui iste nam ipsam! Nostrum hic quod ea non, odit illo expedita numquam debitis.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services -->
+        <div class="container text-center ">
+            <div class="row aboutus">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <span class="fa fa-amazon"></span>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <img class=" pseudo-border " src="./assets/pic4.jpg" alt="coffee mug">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Mission</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Vision</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Values</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, molestias nisi animi odio ratione non neque? Repellat, eligendi velit. Sunt esse ipsa velit, temporibus deserunt aut? Molestiae quidem harum dolorem.</p>
+                        </div>
+
+                        <div class="tab-pane " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                            <p>ipsum dolor sit amet, consectetur adipisicing elit. Porro, voluptatibus? Maiores excepturi sit fuga doloribus asperiores cupiditate omnis cumque deserunt corrupti molestiae ipsam, quisquam tempore voluptatum nostrum aut! Explicabo,
+                                ducimus?
+                            </p>
+                        </div>
+                        <div class="tab-pane " id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">dolor sit amet consectetur adipisicing elit. Asperiores tempora aspernatur dignissimos id quibusdam beatae fuga qui iste nam ipsam! Nostrum hic quod ea non, odit illo expedita numquam debitis.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="services">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <h1><span class="fa fa-car"></span></h1>
+                        <h2>Service One</h2>
+                        <a href="#" class="text-white text-decoration-none">Read More</a>
+                    </div>
+                    <!-- col -->
+                    <div class="col-lg-2">
+                        <h1><span class="fa fa-car"></span></h1>
+                        <h2>Service One</h2>
+                        <a href="#" class="text-white text-decoration-none">Read More</a>
+                    </div>
+                    <!-- col -->
+                    <div class="col-lg-2">
+                        <h1><span class="fa fa-car"></span></h1>
+                        <h2>Service One</h2>
+                        <a href="#" class="text-white text-decoration-none">Read More</a>
+                    </div>
+                    <!-- col -->
+                    <div class="col-lg-2">
+                        <h1><span class="fa fa-car"></span></h1>
+                        <h2>Service One</h2>
+                        <a href="#" class="text-white text-decoration-none">Read More</a>
+                    </div>
+                    <!-- col -->
+                    <div class="col-lg-4">
+                        <h1>Our Services</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores optio impedit animi sit nam accusamus, rerum necessitatibus vitae ipsum ipsam earum alias illo! Minima, nobis alias? Sunt labore cumque sequi qui possimus accusantium,
+                            vel, quidem eum magni nobis voluptatum! Ea.</p>
+                    </div>
+
+                </div>
+                <!--row-->
+            </div>
+        </section>
+
+        <!-- testimonials  -->
+        <section id="testimonials" class="py-4 bg-dark">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./assets/pic5.jpg" alt="" style=" width:200px;height:200px;" class="rounded-circle">
+
+                                        </div>
+                                        <!--4-->
+                                        <div class="col-lg-8">
+                                            <h2>Henry 1</h2>
+                                            <p class="px3 border-start">content</p>
+                                            <p>2 Days Ago</p>
+                                        </div>
+                                        <!--8-->
+                                    </div>
+                                    <!--row inside carousel item-->
+                                </div>
+                                <!--Carousel item-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./assets/pic6.jpg" style="width:200px;height:200px;" alt="" class="rounded-circle">
+                                        </div>
+                                        <!--4-->
+                                        <div class="col-lg-8">
+                                            <h2>Alexander</h2>
+                                            <p class="px3 border-start">content</p>
+                                            <p>2 Days Ago</p>
+                                        </div>
+                                        <!--8-->
+                                    </div>
+                                    <!--row inside carousel item-->
+                                </div>
+                                <!--Carousel item-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <img src="./assets/pic7.jpg" style="width:200px;height:200px;" alt="" class="rounded-circle">
+                                        </div>
+                                        <!--4-->
+                                        <div class="col-lg-8">
+                                            <h2>Ramesh</h2>
+                                            <p class="px3 border-start">content</p>
+                                            <p>2 Days Ago</p>
+                                        </div>
+                                        <!--8-->
+                                    </div>
+                                    <!--row inside carousel item-->
+                                </div>
+                                <!--Carousel item-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h1>TESTIMONIALS </h1>
+                        <p>vel tincidunt justo leo eget ex Nam vel feugiat aliquam, vel tincidunt justo facilisis. Nunc Nam vel feugiat Vestibulum venenatis leo eget ex aliquam, vel tincidunt justo facilisis. Nunc egestas lacus in velit aliquam, sed rutrum
+                            ex tempor. Nam vel feugiat odio. Pellentesque efficitur dapibus augue.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h1>CONTACT US</h1>
+                    <h3>vel tincidunt justo leo eget ex Nam vel feugiat aliquam, vel tincidunt justo facilisis. Nunc Nam vel feugiat</h3>
+                    <p>
+                        Vestibulum venenatis leo eget ex aliquam, vel tincidunt justo facilisis. Nunc egestas lacus in velit aliquam, sed rutrum ex tempor. Nam vel feugiat odio. Pellentesque efficitur dapibus augue.</p>
+                </div>
+                <div class="col-lg-4 bg-dark p-5">
+                    <form action="">
+                        <h1>send us message</h1> <br>
+                        <input type="text" name="" class="form-control bg-dark text-white" id="" placeholder="Enter Your Name">
+                        <br>
+                        <input type="email" name="" class="form-control bg-dark text-white" id="" placeholder="Enter Your Email">
+                        <br>
+                        <input type="number" name="" class="form-control bg-dark text-white" id="" placeholder="Enter Your Mobile Number">
+                        <br>
+                        <textarea class="form-control bg-dark text-white" name="" id="" cols="30" rows="3" placeholder="Your Message"></textarea>
+                        <button style="border:none;padding:5px 22px;background-color:#e2b13c;color:white;margin-top:20px">SENT</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.88654010478!2d77.49085262352497!3d12.953959987105069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1662718349332!5m2!1sen!2sin"
+                        width="400" height="400" style="border:4px solid gold;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="container image-container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h1>Projects</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quod veritatis tenetur nihil laudantium voluptatibus voluptatum sunt, voluptas sequi aliquid veniam. Rerum, nobis eius voluptatibus ab dignissimos ex alias soluta?</p>
+                </div>
+                <div class="col-lg-3">
+
+                    <img src="./assets/pic1.jpg" alt="Snow">
+                    <p class="paragraph-container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique non aliquam itaque corrupti totam</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./assets/pic1.jpg" alt="Snow">
+                    <p class="paragraph-container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique non aliquam itaque corrupti totam.</p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="./assets/pic1.jpg" alt="Snow">
+                    <p class="paragraph-container">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis similique non aliquam itaque corrupti totam natus doloribus </p>
+                </div>
+            </div>
+        </section>
+
+    </header>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+
+</html>

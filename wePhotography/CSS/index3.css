@@ -1,0 +1,12 @@
+.border {
+    width: 7%;
+    height: 36%;
+    background-color: #0d1326;
+    border-top-left-radius: 9%;
+    border-bottom-left-radius: 9%;
+    margin: 10% 1% 90% 92.5%;
+}
+
+.border>span {
+    font-size: xx-large;
+}
