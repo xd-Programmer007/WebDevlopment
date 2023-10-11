@@ -1,0 +1,67 @@
+ul li {
+    display: inline;
+    border: 2px solid red;
+}
+
+ol li {
+    display: inline-block;
+    border: 2px solid red;
+    height: 30px;
+}
+
+a {
+    display: block;
+}
+
+.s1 {
+    display: flex;
+}
+
+.s1 div {
+    width: 30%;
+    margin: 20px;
+}
+
+.aboutus {
+    display: flex !important;
+}
+
+
+/* .aboutus div img {
+    margin: 20px;
+    border: 3px solid gold;
+} */
+
+.aboutus div h1 {
+    font-weight: bold;
+}
+
+.aboutus div {
+    padding: 10px 10px;
+}
+
+.aboutus div button {
+    background-color: rgb(196, 169, 18);
+}
+
+.aboutus div img::after,
+.aboutus div img::before {
+    position: absolute;
+    width: 33px;
+    height: 20px;
+    content: "";
+}
+
+.aboutus div img::before {
+    left: 0;
+    top: 0;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+
+.aboutus div img::-ms-ticks-after {
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+}

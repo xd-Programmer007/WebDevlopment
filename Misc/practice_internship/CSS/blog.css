@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+}
+
+.container div {
+    padding: 20px 20px;
+}
+
+.container a {
+    color: silver;
+    text-decoration: none;
+}
+
+.container div h1 {
+    font-weight: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+img {
+    width: 156.13px;
+    height: 193.15px;
+}
+
+.container>div>div {
+    border-left: 6px solid black;
+    width: 20px;
+}

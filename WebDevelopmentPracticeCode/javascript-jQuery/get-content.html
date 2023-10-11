@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo">
+        <p>This is demo text in a paragraph.</p>
+    </div>
+    <button id="button1" type="button">Show Text</button>
+    <button id="button2" type="button">Show Html</button>
+
+    <h3><a href="http://www.twitter.com" id="tw">Click me </a>to goto Twitter</h3>
+    <p>Name: <input type="text" name="" id="test"></p>
+    <button id="button3" type="button">value in input</button>
+    <button id="button4" type="button">value in href</button>
+    <p id="uniqueText">This is another paragraph.</p>
+    <ol>
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+    </ol>
+    <button id="btn1" type="button">Append text</button>
+    <button id="btn2" type="button">Prepend text</button>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button1").click(function() {
+                alert("Text:" + $("#demo").text());
+            });
+            $("#button2").click(function() {
+                alert("Text:" + $("#demo").html());
+            });
+            $("#button3").click(function() {
+                var a = $("test").val();
+                alert("Value: " + $("#test").val());
+            });
+            $("#btn1").click(function() {
+                $("#uniqueText1").append("<b>Appended text</b>.");
+            });
+
+            $("#btn2").click(function() {
+                $("ol").prepend("<li>Prepended item</li>.");
+            });
+
+
+            $("#button4").click(function() {
+                alert($("#tw").attr("href"));
+            });
+        });
+    </script>
+</body>
+
+</html>

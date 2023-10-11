@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <center>
+        <h1>method of submitting data</h1>
+    </center>
+    <form>
+        <fieldset>Health Info
+            <table border="2px">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>Sex</td>
+                        <td><input type="radio" name="myGender">Male <br>
+                            <input type="radio" name="myGender">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Eye Color</td>
+                        <td><select name="eyecolor">
+                        <option value="Red">red</option>
+                        <option value="Blue">blue</option>
+                        <option value="Grey">grey</option>
+                    </select></td>
+                    </tr>
+                    <tr>
+                        <td>Check all that apply</td>
+                        <td><input type="checkbox" name="height">Over 6ft tall<br>
+                            <input type="checkbox" name="weight">Over 200 pounds</td>
+                    </tr>
+                    <tr>
+                        <td colspan="100%">
+                            Describe you athletic ability:
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="100%"><textarea name="athleticAbility" cols="38" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <center>
+                                <button type="submit">Submit My Information</button>
+                            </center>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

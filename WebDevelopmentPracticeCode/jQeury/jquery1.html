@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    
+    <button class="generate">Random Character</button>
+    <div >
+        <img src="" >
+        <ol>
+            <li>Name is : <span class="name"></span></li>
+            <li>Home world : <span class="homeworld"></span></li>
+            <li>Born location :<span class="bornLocation"></span></li>
+            <li>Hair Color : span.hairColor</li>
+            <li>Eye Color : <span class="eyeColor"></span></li>
+        </ol>
+    </div>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li').css({
+                whiteSpace : "nowrap"
+            });
+            $('ol').css('visibility','hidden')
+          $(".generate").click(function(){
+            let person = Math.floor(Math.random()*88)
+            $.get(`https://akabab.github.io/starwars-api/api/id/${person}.json`,function(data){
+             console.log(data);
+             var $image = data.image;
+             $('div').css({
+                 position : "relative",
+                 margin : '0px 50%'
+             });
+             $('div>img').attr('src',$image).css({
+                     height : "500px",
+                     width : "400px"
+             });
+            $(".homeworld").text(person.homeworld);
+             $(".bornLocation").text(person.bornLocation);
+             $(".eyeColor").text(person.eyeColor);
+             $(".hairColor").text(person.hairColor);
+             var $name = data.name;
+             $('.name').text($name).css({
+                 whiteSpace : "nowrap"
+             })
+                })
+          })
+        })
+    </script>
+</body>
+</html>

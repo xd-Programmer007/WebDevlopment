@@ -1,0 +1,37 @@
+ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: 0.9s;
+}
+
+ul li a:after {
+    content: ' ] ';
+    right: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+ul li a:before {
+    content: " [ ";
+    right: 10px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.9s;
+}
+
+ul li a:hover {
+    color: red;
+}
+
+ul li:hover a:after {
+    right: -15px;
+    transition: 0.9s;
+    opacity: 1;
+}

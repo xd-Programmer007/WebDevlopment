@@ -1,0 +1,13 @@
+    ul li {
+        border: 2px solid #f12dff;
+        margin: 10px 20px 15px 5px;
+        /*top right bottom left;*/
+        padding: 5px 10px;
+    }
+    
+    ol li {
+        display: inline-block;
+        border: 2px solid red;
+        padding: 10px 20px;
+        margin-left: 20px;
+    }

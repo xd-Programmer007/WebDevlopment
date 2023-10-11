@@ -1,0 +1,40 @@
+form>fieldset>legend {
+    text-align: center;
+    font-size: 20px;
+    color: blue;
+}
+
+form>fieldset {
+    display: inline;
+    padding: 5px 20px;
+    background-color: aqua
+}
+
+tbody>tr>td>button {
+    border: 3px ridge red;
+    margin-right: 3px;
+    width: 100px;
+    height: 40px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+tbody>tr>td>button:hover {
+    background-color: red;
+    color: white;
+}
+
+input[type="text"] {
+    border: 8px solid black;
+    width: 400px;
+    margin-left: 2px;
+    height: 30px;
+    background-color: beige;
+    color: orange;
+    font-size: 28px;
+}
+
+#clearButton button {
+    padding: 10% 202%;
+}

@@ -1,0 +1,5 @@
+ 
+  1 git pull https://github.com/xd-Programmer007/Udemy_Projects.git main
+  2 git add README.md
+  3 git commit -m "This is my commit from local machine"
+  4 git push https://github.com/xd-Programmer007/Udemy_Projects.git

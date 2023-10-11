@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Enter side 1</label>
+    <input type="number" name="" id="side1">
+    <br><br>
+    <label for="">Enter side 2</label>
+    <input type="number" name="" id="side2">
+    <button type="button" onClick="areaTriangle()">Click for answer</button>
+    <h2>The answer is: <span id="answer"></span></h2>
+    <script>
+        function areaTriangle() {
+            let s1, s2, ans;
+            s1 = parseInt(document.getElementById("side1").value, 10);
+            s2 = parseInt(document.getElementById("side2").value, 10);
+            ans = 1 / 2 * s1 * s2;
+            document.getElementById("answer").innerHTML = ans;
+        }
+    </script>
+</body>
+
+</html>

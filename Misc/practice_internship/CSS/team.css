@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+}
+
+.container div {
+    padding: 20px 20px;
+}
+
+.container div h3 {
+    color: goldenrod;
+}
+
+.container div h1 {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: silver;
+    font-size: xx-large;
+    margin-top: 0px;
+}
+
+img {
+    width: 156.13px;
+    height: 193.15px;
+}
+
+.container>div>div {
+    border-left: 6px solid black;
+    width: 20px;
+}

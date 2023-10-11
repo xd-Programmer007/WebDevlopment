@@ -1,0 +1,16 @@
+.ourStats {
+    display: flex;
+}
+
+.ourStats div {
+    padding: 10px 10px;
+}
+
+.ourStats h2 {
+    color: gold;
+}
+
+.ourStats .other h1 {
+    color: aqua;
+    font-family: "Helvetica Neue";
+}

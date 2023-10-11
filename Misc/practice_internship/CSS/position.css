@@ -1,0 +1,12 @@
+.parent {
+    border: 2px solid red;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.child {
+    border: 2px solid green;
+    height: 100px;
+    width: 150px;
+}

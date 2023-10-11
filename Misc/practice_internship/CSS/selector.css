@@ -1,0 +1,66 @@
+.text1 {
+    color: red;
+}
+
+#d1 {
+    border: 2px solid green;
+}
+
+
+/* child selectors*/
+
+ul li:nth-child(1) {
+    border: 2px solid green;
+}
+
+ul li:nth-child(even) {
+    border: 2px solid red;
+}
+
+
+/*attributes selectors*/
+
+input[type="teXt"] {
+    color: red;
+    font-weight: bold;
+    caret-color: pink;
+}
+
+input::placeholder {
+    color: black;
+    font-weight: 500;
+}
+
+ol li:hover {
+    border: 2px solid red;
+    color: red;
+    transition: 0.4s;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:active {
+    color: orange !important;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
+ul li:after {
+    content: ' ] ';
+    color: 'red';
+}
+
+ul li:before {
+    content: ' [ ';
+    color: 'red';
+}

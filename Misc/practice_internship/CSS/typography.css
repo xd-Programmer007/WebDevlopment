@@ -1,0 +1,47 @@
+div {
+    width: 50%;
+    border: 2px solid red;
+    margin: auto;
+}
+
+.div1 h1 {
+    color: red;
+}
+
+.div1 {
+    text-align: right;
+    text-transform: uppercase;
+    font-family: 'Dancing Script', cursive;
+}
+
+.div2 {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.div3 {
+    text-align: justify;
+    text-transform: capitalize;
+}
+
+.div4 {
+    text-decoration: underline;
+}
+
+.div5 {
+    text-decoration: line-through;
+}
+
+.div6 {
+    text-decoration: overline;
+}
+
+.div7 {
+    font-weight: lighter;
+}
+
+.div1 p {
+    font-weight: bold;
+    line-height: 1.6;
+    word-spacing: 5px;
+}

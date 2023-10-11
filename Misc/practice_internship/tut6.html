@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form action="backend.php">
+        <label>
+            Name:
+        </label>
+        <input type="text" name="name" placeholder="Enter You name"><br><br>
+
+        <label>
+            Email:
+        </label>
+        <input type="email" name="email" placeholder="Enter You email"><br><br>
+
+        <label>
+            Phone:
+        </label>
+        <input type="tel" name="phone" placeholder="Enter You Phone Number"><br><br>
+        <label>
+            Password:
+        </label>
+        <input type="password" name="password" placeholder="Enter You Password"><br><br>
+        <label>
+            Address:
+        </label>
+        <textarea name="address" placeholder="Enter Your address" cols="30" rows="10"></textarea>
+        <label>Gender:<br></label>
+        <input type="radio" name="myGender" checked>Male
+        <input type="radio" name="myGender">Female<br>
+        <label>Car Owned</label><br>
+        <label>
+            Are you a student?
+        </label>
+        <input type="checkbox" name="student" checked>
+        <br><br>
+        <select name="car">
+            <option value="maruti">maruti</option>
+            <option value="swift">swift</option>
+            <option value="bugatti">bugatti</option>
+            <option value="porsche">porsche</option>
+        </select>
+        <br><br>
+
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">Internet Explorer</option>
+            <option value="Firefox">FireFox</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Opera">Opera</option>
+            <option value="Safari">Safari</option>
+        </select>
+        </datalist>
+        <br><br>
+        <select name="language">
+            <option disabled selected>--Select an option--</option>
+            <option value="Hindi">Hindi</option>
+            <option value="English">English</option>
+            <option value="Kannda">Kannada</option>
+            <option value="German">German</option>
+        </select>
+        <br><br>
+        <button type="submit">submit</button>
+        <button type="reset">reset values</button>
+
+    </form>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Personal Data:</legend>
+            <label>Name:</label>
+            <input type="text">
+        </fieldset>
+        <fieldset>
+            <legend>Educational Data</legend>
+            <label>Highest Degree</label>
+            <select>
+                <option disabled selected>--choose and option--</option>
+                <option value="tenth">10<sup>th</sup></option>
+                <option value="twelfth">12<sup>th</sup></option>
+                <option value="Degree">Degree</option>
+            </select>
+        </fieldset>
+    </form>
+    <label>Color</label>
+    <input type="color">
+    <label> Date</label>
+    <input type="date">
+    <label>datetime-local</label>
+    <input type="datetime-local">
+    <label>month</label>
+    <input type="month">
+    <label>range</label>
+    <input type="range">
+    <label>search</label>
+    <input type="search">
+    <label>tel</label>
+    <input type="tel">
+    <label>time</label>
+    <input type="time">
+    <label>url</label>
+
+    <input type="url">
+    <input type="week">
+</body>
+
+</html>
